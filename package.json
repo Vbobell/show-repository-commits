@@ -1,7 +1,7 @@
 {
   "name": "select-view",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://vbobell.github.io/show-repository-commits/",
   "dependencies": {
     "gh-pages": "^2.0.1",

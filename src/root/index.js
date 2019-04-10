@@ -8,6 +8,7 @@ const Root = () => {
     return (<Provider store={store}>
             <BrowserRouter>
             <Switch>
+                <Route exact path="/" />
                 <Route path="/show-repository-commits" component={AppSelect} />
             </Switch>
             </ BrowserRouter>

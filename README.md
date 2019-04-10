@@ -2,6 +2,8 @@
 
 Project created to view git repository commits. Tools utilized in to project:
 
+- **Webpack**
+- **babel**
 - **React** 
 - **Redux**
 - **gh-pages**

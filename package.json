@@ -14,8 +14,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode development",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "eslintConfig": {
@@ -28,6 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/polyfill": "^7.4.3",

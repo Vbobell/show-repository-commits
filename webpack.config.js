@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -10,7 +11,11 @@ module.exports = {
     },
     devServer: {
         historyApiFallback: true,
-        port: 3000
+        port: 3000,
+        watchOptions: {
+            aggregateTimeout: 300,
+            poll: 1000
+          }
     },
     module: {
         rules: [
@@ -20,7 +25,7 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.scss$/,
+                test: /\.(scss|css)$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
@@ -35,6 +40,9 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'style.css'
-        })
+        }),
+        new CopyPlugin([
+            { from: 'public', to: 'public' }
+        ])
     ]
 };

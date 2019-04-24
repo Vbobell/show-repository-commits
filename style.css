@@ -1,11 +1,19 @@
-header {
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.header-container {
   background-color: #222222;
   padding: 1em; }
-  header h1 {
-    color: #ffffff;
-    font-size: 1.6em; }
 
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px 0px #a1a1a1;
+  padding: 1em; }
 
 body {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  font-family: "Source Sans Pro", sans-serif; }
+  body h1 {
+    color: #ffffff;
+    font-size: 1.6em; }
 

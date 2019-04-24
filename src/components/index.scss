@@ -1,0 +1,11 @@
+@import './variables.scss';
+@import './fonts.scss';
+
+body {
+    background-color: $primary-bg-color;
+    font-family: $source-sans-pro;
+    h1 {
+        color: $secundary-font-color;
+        font-size: $sm-font-em-2;
+    }
+}

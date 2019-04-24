@@ -1,10 +1,6 @@
-@import './../variables.scss';
+@import './../../variables.scss';
 
-header {
+.header-container {
     background-color: $secundary-bg-color;
     padding: $sm-em-2;
-    h1 {
-        color: $secundary-font-color;
-        font-size: $sm-font-em-2;
-    }
 }

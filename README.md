@@ -6,6 +6,7 @@ Project created to view git repository commits. Tools utilized in to project:
 - **babel**
 - **React** 
 - **Redux**
+- **SASS**
 - **gh-pages**
 - **API GIT hub**
 

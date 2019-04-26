@@ -8,6 +8,6 @@ Project created to view git repository commits. Tools utilized in to project:
 - **Redux**
 - **SASS**
 - **gh-pages**
-- **API GIT hub**
+- **API github**
 
 **[Project view](https://vbobell.github.io/show-repository-commits/ "Project view")**

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class RepositoryCommit extends Component {
     render() {
         return (
-            <section>
+            <section className="repo-commits-container">
                 {
                     this.props.commits.map(({ commit, sha }) => {
                         return (

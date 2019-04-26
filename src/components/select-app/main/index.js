@@ -9,7 +9,7 @@ class MainSelect extends Component {
   render() {
     return (
       <main>
-        <section>
+        <section className="repo-select-container">
           <Select/>
         </section>
         <RepositorySelected/>

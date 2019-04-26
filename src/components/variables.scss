@@ -5,6 +5,8 @@ $ternary-bg-color: #ffffff;
 
 $primary-font-color: #222222;
 $secundary-font-color: #ffffff;
+
+$secundary-color: #a1a1a1;
 //Colors
 
 //Sizes
@@ -14,10 +16,16 @@ $sm-em-2: 1em;
 $sm-em-3: 1.5em;
 $sm-em-4: 2em;
 
+$sm-width-perc-12: 100%;
+
 $sm-font-em-1: 1.2em;
 $sm-font-em-2: 1.6em;
 //Sizes
 
 //Box
-$box-shadow: 2px 2px 4px 0px #a1a1a1;
+$box-shadow: 2px 2px 4px 0px $secundary-color;
 //Box
+
+// border
+$border-px-1: 1px solid $secundary-color;
+// border

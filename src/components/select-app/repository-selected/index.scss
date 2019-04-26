@@ -1,0 +1,10 @@
+@import './../../variables.scss';
+
+section.repo-selected-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $sm-width-perc-12;
+    padding: $sm-em-2 0;
+    border-bottom: $border-px-1;
+}

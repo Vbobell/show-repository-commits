@@ -1,9 +1,18 @@
 @import './../../variables.scss';
 
 main {
+    display: flex;
+    flex-wrap: wrap;
     max-width: $max-container;
     margin: $sm-em-4 auto;
     background-color: $ternary-bg-color;
     box-shadow: $box-shadow;
     padding: $sm-em-2;
+    section.repo-select-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $sm-width-perc-12;
+        padding: $sm-em-2 0;
+    }
 }

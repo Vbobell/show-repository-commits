@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import './index.scss';
+
 class RepositorySelected extends Component {
     render() {
         return (
-            <section>
-                {
-                    this.props.repositories.map((repository) => {
-                        return repository.selected ? repository.name : ""
-                    })
-                }
-            </section>
+            this.props.repositories.map((repository) => {
+                return repository.selected ? 
+                <section key={repository.id} className="repo-selected-container">
+                    <h2>{repository.name}</h2>
+                </section> : ""
+            })
         );
     }
 }

@@ -3,12 +3,28 @@
   background-color: #222222;
   padding: 1em; }
 
+section.repo-selected-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1em 0;
+  border-bottom: 1px solid #a1a1a1; }
+
 main {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 800px;
   margin: 2em auto;
   background-color: #ffffff;
   box-shadow: 2px 2px 4px 0px #a1a1a1;
   padding: 1em; }
+  main section.repo-select-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em 0; }
 
 body {
   background-color: #eeeeee;
@@ -16,4 +32,7 @@ body {
   body h1 {
     color: #ffffff;
     font-size: 1.6em; }
+  body h2 {
+    color: #222222;
+    font-size: 1.2em; }
 

@@ -11,6 +11,25 @@ section.repo-selected-container {
   padding: 1em 0;
   border-bottom: 1px solid #a1a1a1; }
 
+.repo-commits-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: calc(360px + 2em);
+  padding: 1em 0;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .repo-commits-container .repo-commits-item {
+    width: calc(25% - 3em);
+    height: calc(180px - 1em);
+    padding: 1em;
+    margin: 0 1em 1em 0;
+    background-color: #add8e6;
+    box-shadow: 2px 2px 4px 0px #a1a1a1; }
+    .repo-commits-container .repo-commits-item h3 {
+      font-size: 1.6em;
+      color: #ffffff;
+      margin: 0 0 0.5em 0; }
+
 main {
   display: flex;
   flex-wrap: wrap;

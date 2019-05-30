@@ -1,6 +1,7 @@
 import { GET_COMMITS } from '../actions/type';
 
 const initialState = {
+    "repoName": "",
     "commits": [{
         "commit": {
             "author": {
@@ -9,7 +10,8 @@ const initialState = {
             "message": ""
         },
         "sha": 0
-    }]
+    }],
+    "commitsOfPage": 30
 };
 
 export default function (state = initialState, action) {
@@ -17,7 +19,9 @@ export default function (state = initialState, action) {
         case GET_COMMITS:
             return {
                 ...state,
-                commits: action.commits
+                repoName: action.repoName,
+                commits: action.commits,
+                commitsOfPage: action.commitsOfPage
             };
         default:
             return state;

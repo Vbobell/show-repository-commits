@@ -29,9 +29,11 @@ export function getSelectedRepository(id) {
     }
 }
 
-export async function getCommitsRepository(repoName) {
-    const response = await fetch(`${BASE_URL_GIT}/repos/vbobell/${repoName}/commits`);
+export async function getCommitsRepository(repoName, commitsOfPage) {
+    const response = await fetch(`${BASE_URL_GIT}/repos/vbobell/${repoName}/commits?per_page=${commitsOfPage}&sha=master`);
     let commits = await response.json();
+
+    console.log(`${BASE_URL_GIT}/repos/vbobell/${repoName}/commits?per_page=${commitsOfPage}&sha=master`);
 
     commits = commits.map(( { commit, sha } ) => {
         return { commit, sha }
@@ -39,6 +41,8 @@ export async function getCommitsRepository(repoName) {
 
     return {
         type: GET_COMMITS,
-        commits
+        commits,
+        commitsOfPage,
+        repoName
     }
 }

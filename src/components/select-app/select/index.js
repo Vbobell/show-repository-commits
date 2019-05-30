@@ -10,9 +10,9 @@ class Select extends Component {
 
   changeRepository = (e) => {
     let option = e.target.querySelector(`option[value="${e.target.value}"]`);
-    
+
     this.props.getSelectedRepository(e.target.value);
-    this.props.getCommitsRepository(option.getAttribute('data-name'));
+    this.props.getCommitsRepository(option.getAttribute('data-name'), 30);
   }
 
   render() {
@@ -28,9 +28,10 @@ class Select extends Component {
   }
 }
 
-const mapStateToProps = ({ repositories }) => {
+const mapStateToProps = ({ commits, repositories }) => {
   return {
-    repositories: repositories.repositories
+    repositories: repositories.repositories,
+    commitsOfPage: commits.commitsOfPage
   }
 }
 
